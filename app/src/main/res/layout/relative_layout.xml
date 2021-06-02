@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/Titulo"
+        android:layout_toStartOf="@id/Titulo"
+        android:textSize="48sp"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/teal_200"
+        android:text="@string/calcular_imc"
+        />
+
+    <EditText
+        android:id="@+id/pesoEDT"
+        android:layout_below="@id/Titulo"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="80dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/peso_em_kg_ex_54_4"
+        style="@style/textStyle" />
+
+    <EditText
+        android:id="@+id/alturaEDT"
+        tools:visibility="visible"
+        android:layout_below="@id/pesoEDT"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="36dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        style="@style/textStyle"
+        android:hint="@string/altura_em_m_ex_1_78" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/alturaEDT"
+        android:layout_width="190dp"
+        android:layout_height="70dp"
+        android:text="@string/clique_aqui"
+        android:textColor="@color/purple_200" />
+
+</RelativeLayout>

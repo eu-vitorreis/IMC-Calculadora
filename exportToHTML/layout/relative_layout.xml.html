@@ -1,0 +1,72 @@
+<html>
+<head>
+<title>relative_layout.xml</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #e8bf6a;}
+.s1 { color: #bababa;}
+.s2 { color: #6a8759;}
+.s3 { color: #a9b7c6;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+relative_layout.xml</font>
+</center></td></tr></table>
+<pre><span class="s0">&lt;?</span><span class="s1">xml version</span><span class="s2">=&quot;1.0&quot; </span><span class="s1">encoding</span><span class="s2">=&quot;utf-8&quot;</span><span class="s0">?&gt;</span>
+<span class="s0">&lt;RelativeLayout</span>
+    <span class="s1">xmlns:android</span><span class="s2">=&quot;http://schemas.android.com/apk/res/android&quot; </span><span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+    <span class="s1">android:layout_height</span><span class="s2">=&quot;match_parent&quot;</span>
+    <span class="s1">xmlns:tools</span><span class="s2">=&quot;http://schemas.android.com/tools&quot;</span><span class="s0">&gt;</span>
+
+    <span class="s0">&lt;TextView</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/Titulo&quot;</span>
+        <span class="s1">android:layout_toStartOf</span><span class="s2">=&quot;@id/Titulo&quot;</span>
+        <span class="s1">android:textSize</span><span class="s2">=&quot;48sp&quot;</span>
+        <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;60dp&quot;</span>
+        <span class="s1">android:layout_centerHorizontal</span><span class="s2">=&quot;true&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:textStyle</span><span class="s2">=&quot;bold&quot;</span>
+        <span class="s1">android:textColor</span><span class="s2">=&quot;@color/teal_200&quot;</span>
+        <span class="s1">android:text</span><span class="s2">=&quot;@string/calcular_imc&quot;</span>
+        <span class="s0">/&gt;</span>
+
+    <span class="s0">&lt;EditText</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/pesoEDT&quot;</span>
+        <span class="s1">android:layout_below</span><span class="s2">=&quot;@id/Titulo&quot;</span>
+        <span class="s1">android:layout_marginHorizontal</span><span class="s2">=&quot;40dp&quot;</span>
+        <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;80dp&quot;</span>
+        <span class="s1">android:ems</span><span class="s2">=&quot;10&quot;</span>
+        <span class="s1">android:inputType</span><span class="s2">=&quot;textPersonName&quot;</span>
+        <span class="s1">android:hint</span><span class="s2">=&quot;@string/peso_em_kg_ex_54_4&quot;</span>
+        <span class="s1">style</span><span class="s2">=&quot;@style/textStyle&quot; </span><span class="s0">/&gt;</span>
+
+    <span class="s0">&lt;EditText</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/alturaEDT&quot;</span>
+        <span class="s1">tools:visibility</span><span class="s2">=&quot;visible&quot;</span>
+        <span class="s1">android:layout_below</span><span class="s2">=&quot;@id/pesoEDT&quot;</span>
+        <span class="s1">android:layout_marginHorizontal</span><span class="s2">=&quot;40dp&quot;</span>
+        <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;36dp&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:ems</span><span class="s2">=&quot;10&quot;</span>
+        <span class="s1">android:inputType</span><span class="s2">=&quot;textPersonName&quot;</span>
+        <span class="s1">style</span><span class="s2">=&quot;@style/textStyle&quot;</span>
+        <span class="s1">android:hint</span><span class="s2">=&quot;@string/altura_em_m_ex_1_78&quot; </span><span class="s0">/&gt;</span>
+
+    <span class="s0">&lt;Button</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/button&quot;</span>
+        <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;80dp&quot;</span>
+        <span class="s1">android:layout_centerHorizontal</span><span class="s2">=&quot;true&quot;</span>
+        <span class="s1">android:layout_below</span><span class="s2">=&quot;@id/alturaEDT&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;190dp&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;70dp&quot;</span>
+        <span class="s1">android:text</span><span class="s2">=&quot;@string/clique_aqui&quot;</span>
+        <span class="s1">android:textColor</span><span class="s2">=&quot;@color/purple_200&quot; </span><span class="s0">/&gt;</span>
+
+<span class="s0">&lt;/RelativeLayout&gt;</span></pre>
+</body>
+</html>
